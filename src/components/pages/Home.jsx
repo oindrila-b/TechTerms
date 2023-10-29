@@ -12,6 +12,7 @@ import unity from '../assets/icons/unity.png';
 import down from '../assets/icons/down.png';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { Card } from 'react-bootstrap';
 
 
 export const Home = () => {
@@ -42,14 +43,17 @@ export const Home = () => {
                     <div className="stone"></div>
                 </div>
             </div>
-            <HashLink smooth to='/home/#section1' >
+            <HashLink smooth to='/home/#categories' >
                 <div>
                     <img src={down} alt="" width={"2%"} />
-                    <h2 className='see-more'>See More</h2>
+                    {/* <h2 className='see-more'>See More</h2> */}
                 </div>
             </HashLink>
-            <div id='allTermCategories'>
-
+            <div id='categories'>
+            <h1 className='see-more'>CATEGORIES</h1>
+            <Card style={{width:'18rem'}}>
+                <Card.Img variant='top' src='' />
+            </Card>
             </div>
 
         </div>
