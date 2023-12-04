@@ -3,85 +3,12 @@ body{
     overflow-y: scroll;
     background-image: url("/src/components/assets/earthGlobal.png");
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
 body .title{
     text-decoration: none;
     color: white;
-}
-
-.circle {
-    width: 1500px; ;
-    height: 1500px;
-    display: inline-block;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    position: absolute;
-    top: 330px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    animation: circle 60s linear 0s infinite;
-}
-
-@keyframes circle {
-
-    to{
-        transform: rotate(360deg);
-    }
-    
-}
-
-.icon{
-    position: absolute;
-    width: 4.5%;
-    height: 4.5%;
-    padding: 28px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    background-color: #292c45;
-    transition: all ease 0.5s;
-}
-
-
-.icon:hover{
-    border-color: #be9306;
-    background-color: #be9306;
-    box-shadow: 0 4px 94px #f2d577;
-}
-
-.icon:nth-child(1){
-    top: -60px;
-    left: 43%;
-}
-
-.icon:nth-child(2){
-    top: 215px;
-    left: 120px;
-}
-.icon:nth-child(3){
-    top: 700px;
-    left: -60px;
-}
-.icon:nth-child(4){
-    bottom: 150px;
-    right: 1230px;
-}
-.icon:nth-child(5){
-    bottom: -60px;
-    right: 46%;
-}
-.icon:nth-child(6){
-    bottom: 150px;
-    left: 1230px;
-}
-.icon:nth-child(7){
-    bottom: 680px;
-    left: 1460px;
-}
-.icon:nth-child(8){
-    bottom: 1150px;
-    left: 1300px;
 }
 
 .stone {
@@ -133,7 +60,7 @@ body .title{
     top: 300px;
     right: 400px;
     left: inherit;
-    animation-delay: .8s;
+    animation-delay: .8s; 
     animation-duration: 7s;
 }
 
