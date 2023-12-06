@@ -1,6 +1,7 @@
 body{
-    background-image: url("/src/components/assets/earth3.png");
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("/src/components/assets/icons/BCKG.jpg");
+    background-size: cover;
 }
 
 .active {
@@ -40,6 +41,7 @@ nav ul li a{
     border-radius: 0.5rem; */
 
     position: relative;
+    right: 50px;
     display: block;
     text-transform: uppercase;
     margin: 20px 0;
@@ -71,7 +73,7 @@ nav ul li a{
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #595f97;
+      background-color: rgb(166, 135, 207);
       transform: scale(0);
       opacity: 0;
       transition: .3s;

@@ -1,7 +1,5 @@
 body{
     overflow-x: hidden;
-    overflow-y: scroll;
-    background-image: url("/src/components/assets/earthGlobal.png");
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }

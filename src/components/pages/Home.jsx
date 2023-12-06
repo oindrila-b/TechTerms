@@ -1,24 +1,40 @@
 import React from 'react'
-import image from '../assets/earth3.png'
 import './css/Home.css'
-import microchip from '../assets/icons/microchip.png';
-import database from '../assets/icons/database.png';
-import laptopmobile from '../assets/icons/laptop-mobile.png';
-import userRobot from '../assets/icons/user-robot.png';
-import cloudShare from '../assets/icons/cloud-share.png';
-import headVr from '../assets/icons/head-vr.png';
-import qrcode from '../assets/icons/qrcode.png';
-import unity from '../assets/icons/unity.png';
-import down from '../assets/icons/down.png';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
-import { Card } from 'react-bootstrap';
+import ai from '../assets/ai.png';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+
 
 
 export const Home = () => {
     return (
         <div>
-            <h1>Tech Terms</h1>
+            <Parallax pages={4} >
+                <ParallaxLayer
+                    speed={1}
+                     offset={0}
+                     factor={2}
+                    style={{
+                        backgroundImage: `url(${ai})`,
+                        backgroundSize: 'fill',
+                    }}
+                >
+                </ParallaxLayer>
+                <ParallaxLayer
+                    speed={1}
+                    offset={1}
+                    factor={4}
+                    style={{
+                        backgroundImage: `url(${ai})`,
+                        backgroundSize: 'fill',
+                    }}
+                ></ParallaxLayer>
+                <ParallaxLayer speed={1}>
+                    <h1>TRIAL ONE</h1>
+                </ParallaxLayer>
+                <ParallaxLayer offset={1} speed={0.5}>
+                    <h1>TRIAL 2</h1>
+                </ParallaxLayer>
+            </Parallax>
         </div>
     )
 }
