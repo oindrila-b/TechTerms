@@ -22,6 +22,11 @@ export const NavbarComponent = () => {
         <span></span>
       </div>
       <ul className={menuOpen ? "open" : ""}>
+      <li>
+          <NavLink to={"/allTerms"}>
+            All Terms
+          </NavLink>
+        </li>
         <li>
           <NavLink to={"/about"}>
             About
@@ -32,11 +37,7 @@ export const NavbarComponent = () => {
             Contribute
           </NavLink>
         </li>
-        <li>
-          <NavLink to={"/allTerms"}>
-            All Terms
-          </NavLink>
-        </li>
+        
       </ul>
     </nav>
   )
